@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-icons.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style>
+  body{overflow-x: hidden; }
+  th,td{padding: 20px 0px !important;}
+  .thbg{background-color: rgb(228, 226, 224) !important}
+  .hvr{padding:5px 0px;}
+  .hvr:hover{padding:15px 0px ;}
+  .hvr hr{display: none; }
+  .hvr:hover hr{display: block;  }
+  .nav-link{color:white !important;}
+  
+</style>
+<script>
+        function counter(){
+           cust=0; train=0; comm=0; equip=0;
+          function one(){
+          document.getElementById('cust').textContent=cust;
+          cust=cust<960?cust+=25:cust
+          a=setTimeout(one, 50);
+          }
+          function two(){
+          document.getElementById('train').textContent=train;
+          train=train<=45?train+=1:train
+          b=setTimeout(two, 50);
+          }
+        function three(){
+          document.getElementById('comm').textContent=comm;
+          comm=comm<=123?comm+=1:comm
+          c=setTimeout(three, 10);
+          }
+        function four(){
+          document.getElementById('equip').textContent=equip;
+          equip=equip<=179?equip+=1:equip
+          d=setTimeout(four, 10);
+          }
+        one();
+        two();
+        three();
+        four();
+
+        }
+    </script>
+</head>
+<body onload="counter()">
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container px-5">
+<a class="navbar-brand w-50 px-5" href="#">
+<img src="image/gym2-removebg-preview (1).png" width="170" height="100px"  alt="">
+</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#!" data-scroll-nav="0">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about" data-scroll-nav="1">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services" data-scroll-nav="2">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#timetable" data-scroll-nav="3">Timetable</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#trainers" data-scroll-nav="4">Trainers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pricing" data-scroll-nav="5">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact" data-scroll-nav="6">Contact</a>
+              </li>
+<li class="nav-item ps-5 pt-2">
+                    <button class="bg-dark border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button> 
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="offcanvas bg-dark  offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-center" id="offcanvasNavbarLabel">
+            <img src="image/gym2-removebg-preview (1).png" width="190" height="100px"  alt="">
+
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="color: white;"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+                <a class="nav-link active" href="#!" data-scroll-nav="0">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about" data-scroll-nav="1">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#services" data-scroll-nav="2">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#timetable" data-scroll-nav="3">Timetable</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#trainers" data-scroll-nav="4">Trainers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#pricing" data-scroll-nav="5">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact" data-scroll-nav="6">Contact</a>
+            </li>    
+        </ul>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+  
+      
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" style="transform: translateY(-150px);z-index: -1;">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img src="image/slide-01.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption text-start d-none d-md-block">
+                  <h5 class="text-white fw-bold" >GET YOUR BODY IN SHAPE</h5>
+                  <h1 class="text-white fw-bold display-4">BEST FITNESS STUDIO</h1>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="image/slide-02.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption text-start d-none d-md-block">
+                  <h5 class="text-white fw-bold">PUT FITN7ESS FIRST TIME</h5>
+                  <h1 class="text-white fw-bold display-4">CHAMPIONS TRAINED</h1>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="image/slide-03.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption text-start d-none d-md-block">
+                  <h5 class="text-white fw-bold">WORLD CLASS FACILITIES</h5>
+                  <h1 class="text-white fw-bold display-4">HIGH QUALITY EQUIPMENTS</h1>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+          </button>
+          </div>
+<div class="container pb-5 " id="about">
+  <div class="row ">
+    <div class="col-md-6 mt-3 text-center">
+   <img src="image/about-01.jpg" class="w-75">
+   <img src="image/about-02.jpg" class="w-50" style="transform: translate(100px,-100px);" >
+    </div>
+    <div class="col-md-6 mt-5">
+      <p class="fw-bold"><span class="text-info">#2    -----   </span>  ABOUT US</p>
+    <h2 class="fw-bold ">The fitness you will enjoy with our <span class="text-info"> #Workout</span></h2>
+    <p class="mt-4">Porta finibus sapien suscipit in. Cras vestibulum neque sed ante rhoncus, sed feugiat felis porttitor. In auctor malesuada justo, sit amet congue justo eleifend nec. Nunc quis hendrerit ante. Donec blandit tincidunt lacus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, voluptatum perferendis. Necessitatibus debitis voluptatibus at esse, maxime eaque, ratione atque explicabo odit fugiat perferendis consequatur veritatis dicta eveniet quisquam adipisci?</p>
+    <ul class="lh-lg">
+      <li class="">Aliquet non nulla fusce molestie posuere</li>
+      <li>Sed semper blandit euismod fusce mauris</li>
+      <li>Aenean sollicitudin magna vel efficitur</li>
+    </ul>
+    <button class="btn btn-outline-info">VIEW MORE</button>
+    </div>
+  </div>
+</div>
+      <div class="bg-light py-4 my-4">
+      <div class="row  text-center ">
+      <div class="col-md-3"><i class="bi bi-person fs-1 text-info"></i><p class="fs-3 fw-bold text-center"><span id="cust">984</span>+</p><p class="fs-6 fw-bold">Happy Customers</p></div>
+      <div class="col-md-3"><i class="bi bi-check-square fs-1 text-info"></i><p class="fs-3 fw-bold text-center"><span id="train">45</span>+</p><p class="fs-6 fw-bold">Personal Trainers</p></div>
+      <div class="col-md-3"><i class="bi bi-heart fs-1 text-info"></i><p class="fs-3 fw-bold text-center"><span id="comm">124</span>+</p><p class="fs-6 fw-bold">communities</p></div>
+      <div class="col-md-3"><i class="bi bi-hand-thumbs-up fs-1 text-info"></i><p class="fs-3 fw-bold text-center"><span id="equip">180</span>+</p><p class="fs-6 fw-bold">Equipments</p></div>
+</div>
+</div>
+<div class="py-5 text-center" id="services">
+<h6 class="fw-bold"><span class="text-info ">#3----</span> SERVICES</h6>
+<h2 class="fw-bold">We're giving guarantee for <br> exquisite <span class="text-info"> #Services </span> </h2>
+<div id="carouselExampleIndicators" class="carousel slide mt-5">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" >
+      <div class="row" style="min-height: 350px;">
+        <div class="col">
+          <div style="background-image: url(image/service-01.jpg); background-size: cover;
+          background-position: right;" class="h-100"></div>
+        </div>
+        <div class="col-5">
+          <div style="background-image: url(image/service-02.jpg); background-size: cover;
+          background-position: center;" class="h-100"></div>
+        </div>
+        <div class="col">
+          <div style="background-image: url(image/service-03.jpg); background-size: cover;
+          background-position: center;" class="h-100"></div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item "> 
+      <div class="row" style="min-height: 350px;">
+        <div class="col">
+          <div style="background-image: url(image/service-04.jpg); background-size: cover;
+          background-position: right;" class="h-100"></div>
+        </div>
+        <div class="col-5">
+          <div style="background-image: url(image/service-01.jpg); background-size: cover;
+          background-position: center;" class="h-100"></div>
+        </div>
+        <div class="col">
+          <div style="background-image: url(image/service-02.jpg); background-size: cover;
+          background-position: left;" class="h-100"></div>
+        </div>
+    </div>
+  </div>
+    <div class="carousel-item ">
+      <div class="row" style="min-height: 350px;">
+        <div class="col">
+          <div style="background-image: url(image/service-03.jpg); background-size: cover;
+          background-position: right;" class="h-100"></div>
+        </div>
+        <div class="col-5">
+          <div style="background-image: url(image/service-04.jpg); background-size: cover;
+          background-position: center;" class="h-100"></div>
+        </div>
+        <div class="col">
+          <div style="background-image: url(image/service-01.jpg); background-size: cover;
+          background-position: left;" class="h-100"></div>
+        </div> 
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="container p-5 bg-light text-center mt-5" id="timetable">
+    <p class="fw-bold "><span class="text-info">#4-----</span>TIMETABLE</p>
+   <h3 class="fw-bold">Commited to fabulous and great <br><span class="text-info">#Timetable</span></h3>
+   <div class="table-responsive ">
+   <table class="table  table-bordered table-hover w-100">
+    <thead>
+    <tr class="table-info"><th>Routine</th><th>10am</th><th>11am</th><th>03pm</th><th>05pm</th><th>07pm</th></tr>
+</thead>
+<tbody>
+    <tr><td class="fs-5 fw-bold thbg">SUNDAY</td><td ><span class="fw-bold">Weight-loss</span> <br>10am-11am</td><td></td><td ><span class="fw-bold">Yoga</span><br>03pm-04pm</td><td><span class="fw-bold">Boxing</span> <br>05pm-07pm</td><td></td></tr>
+    <tr><td class="fw-bold fs-5 thbg">MONDAY</td><td></td><td><span class="fw-bold">Cycling</span><br>11am-12pm</td><td><span class="fw-bold">Karate</span><br>03pm-05pm</td><td></td><td><span class="fw-bold">Crossfit</span><br>07pm-09pm </td></tr>
+    <tr><td class="fw-bold fs-5 thbg">TUESDAY</td><td><span class="fw-bold">Spinning</span><br>10am-11am</td><td></td><td></td><td><span class="fw-bold">Bootcamp</span><br>03pm-05pm</td><td><span class="fw-bold">Boxercise</span><br>07-09pm</td></tr>
+    <tr><td class="fw-bold fs-5 thbg">WEDNESDAY</td><td><span class="fw-bold">Body-building</span><br>10am-12pm</td><td></td><td><span class="fw-bold">Dance</span><br>03pm-05pm</td><td></td><td><span class="fw-bold">Health</span><br>07pm-09pm</td></tr>
+    <tr><td class="fw-bold fs-5 thbg">THURSDAY</td><td></td><td><span class="fw-bold">Bootcamp</span><br>11am-12pm</td><td></td><td><span class="fw-bold">Body-building</span><br>05pm-07pm</td><td></td></tr>
+    <tr><td class="fw-bold fs-5 thbg">FRIDAY</td><td><span class="fw-bold">Racing</span> <br>10am-11am</td><td></td><td><span class="fw-bold">Energy-Blast</span><br>03pm-04pm</td><td></td><td><span class="fw-bold">Gymming</span><br>07pm-09pm</td></tr>
+    <tr><td class="fw-bold fs-5 thbg">SATURDAY</td><td></td><td></td><td><span class="fw-bold">Aerobics</span> <br>03pm-05pm</td><td></td><td><span class="fw-bold">Cycling</span><br>07pm-09pm</td></tr>
+</tbody>
+</table>
+   </div>
+</div>
+</div>
+<div class="container text-center py-5" id="trainers">
+<p class="fw-bold"><span class="text-info">#5---</span>Trainers</p>
+<h2 class="fw-bold">We take pride for our superior <br> <span class="text-info"> #Trainers</span></h2>
+<div id="carouselExample1" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExample1" data-bs-slide-to="0" class="active rounded-circle bg-info" aria-current="true" aria-label="Slide 1" style="width:7px ; padding:2px ;"></button>
+    <button type="button" data-bs-target="#carouselExample1" data-bs-slide-to="1" aria-label="Slide 2" class="rounded-circle bg-info" style="width:7px ; padding:2px ;"></button>
+
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" >
+    <div class="row" style="min-height: 350px;">
+    <div class="col-md-4">
+    <img src="image/team-01.jpg" class="w-100">
+    <div class="bg-white shadow hvr w-50 text-center"style="transform: translate(100px,-70px);">
+    <h5 class="fw-bold pt-4"> Wilfred Drake</h5>
+    <p>Boxing Trainer</p>
+    <hr class="w-25 m-auto border border-info ">
+    <div id="sociallinks" class="py-3">
+    <a href="#"><i class="bi bi-facebook  text-muted"></i></a>
+    <a href="#"><i class="bi bi-twitter ms-2 text-muted"></i></a>
+    <a href="#"><i class="bi bi-youtube ms-2 text-muted"></i></a>
+    <a href="#"><i class="bi bi-linkedin ms-2 text-muted"></i></a>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-4">
+    <img src="image/team-02.jpg" class="w-100">
+    <div class="bg-white shadow w-50 text-center  hvr" style="transform: translate(100px,-70px);">
+      <h5 class="fw-bold pt-4"> Betty-Alvarez</h5>
+      <p>Weight-loss Trainer</p>
+      <hr class="w-25 m-auto border border-info">
+           <div id="sociallinks" class="py-3">
+             <a href="#"><i class="bi bi-facebook  text-muted"></i></a>
+             <a href="#"><i class="bi bi-twitter ms-2 text-muted"></i></a>
+             <a href="#"><i class="bi bi-youtube ms-2 text-muted"></i></a>
+             <a href="#"><i class="bi bi-linkedin ms-2 text-muted"></i></a>
+           </div>
+           </div>  
+  </div>
+    <div class="col-md-4">
+    <img src="image/team-03.jpg" class="w-100">
+    <div class="bg-white shadow w-50 hvr text-center "style="transform: translate(100px,-70px);">
+      <h5 class="fw-bold pt-4">Ann Woody</h5>
+      <p>Yoga Trainer</p>
+      <hr class="w-25 m-auto border border-info">
+           <div id="sociallinks" class="py-3">
+             <a href="#"><i class="bi bi-facebook  text-muted"></i></a>
+             <a href="#"><i class="bi bi-twitter ms-2 text-muted"></i></a>
+             <a href="#"><i class="bi bi-youtube ms-2 text-muted"></i></a>
+             <a href="#"><i class="bi bi-linkedin ms-2 text-muted"></i></a>
+           </div>
+           </div>  
+  </div>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row" style="min-height: 350px;">
+        <div class="col-md-4">
+        <img src="image/team-02.jpg" class="w-100">
+        <div class="bg-white shadow w-50 hvr text-center "style="transform: translate(100px,-70px);">
+          <h5 class="fw-bold pt-4">Gojo Satoro</h5>
+          <p>Athletics Trainer</p>
+          <hr class="w-25 m-auto border border-info">
+               <div id="sociallinks" class="py-3">
+                 <a href="#"><i class="bi bi-facebook  text-muted"></i></a>
+                 <a href="#"><i class="bi bi-twitter ms-2 text-muted"></i></a>
+                 <a href="#"><i class="bi bi-youtube ms-2 text-muted"></i></a>
+                 <a href="#"><i class="bi bi-linkedin ms-2 text-muted"></i></a>
+               </div>
+               </div>  
+      </div>
+        <div class="col-md-4">
+        <img src="image/team-04.jpg" class="w-100">
+        <div class="bg-white shadow w-50 hvr text-center"style="transform: translate(100px,-70px);">
+          <h5 class="fw-bold pt-4">Imagene Byas</h5>
+          <p>Aerobics Trainer</p>
+          <hr class="w-25 m-auto border border-info">
+               <div id="sociallinks" class="py-3">
+                 <a href="#"><i class="bi bi-facebook  text-muted"></i></a>
+                 <a href="#"><i class="bi bi-twitter ms-2 text-muted"></i></a>
+                 <a href="#"><i class="bi bi-youtube ms-2 text-muted"></i></a>
+                 <a href="#"><i class="bi bi-linkedin ms-2 text-muted"></i></a>
+               </div>
+               </div>  
+      </div>
+        <div class="col-md-4">
+          <img src="image/team-03.jpg" class="w-100">
+          <div class="bg-white shadow w-50 hvr text-center "style="transform: translate(100px,-70px);">
+            <h5 class="fw-bold pt-4"> Wilfred Drake</h5>
+            <p>Boxing Trainer</p>
+            <hr class="w-25 m-auto border border-info">
+                 <div id="sociallinks" class="py-3">
+                   <a href="#"><i class="bi bi-facebook  text-muted"></i></a>
+                   <a href="#"><i class="bi bi-twitter ms-2 text-muted"></i></a>
+                   <a href="#"><i class="bi bi-youtube ms-2 text-muted"></i></a>
+                   <a href="#"><i class="bi bi-linkedin ms-2 text-muted"></i></a>
+                 </div>
+                 </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+</div>
+
+<div class="container bg-light text-center py-5" id="pricing">
+  <p class="fw-bold"><span class="text-info">#6----</span>Pricing</p>
+<h2 class="fw-bold">The foremost source and cheap <br><span class="text-info">#Pricing</span>
+  </h2>
+  <div class="row justify-content-center">
+    <div class="col-md-3 mb-2" >
+      <div style="background-image: url(image/pricing-bg-01.jpg); background-size: cover;">
+      <div class="card py-3" style="background-color: rgba(0,0,0,0.8);">
+        <div class="card-body text-white">
+          <h5 class="card-title  fw-bold">STANDARD</h5>
+          <h2 class="fw-bold  my-4" >$29/<span class="fs-5">monthly</span></h2>
+          <p class="">Unlimited access to the GYM</p>
+          <p class="">FREE drinking package</p>
+          <p class="">One year membership</p>
+          <p class="">3 classes per week</p>
+          <p class="">Free personal training</p>
+          <button class="btn btn-info text-white border-0 rounded py-2 px-3">BUY NOW</button>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-2" >
+      <div style="background-image: url(image/pricing-bg-02.jpg); background-size: cover;">
+      <div class="card py-3" style="background-color: rgba(0,0,0,0.8);">
+        <div class="card-body text-white">
+          <h5 class="card-title  fw-bold">STANDARD</h5>
+          <h2 class="fw-bold  my-4" >$49/<span class="fs-5">monthly</span></h2>
+          <p class="">Unlimited access to the GYM</p>
+          <p class="">FREE drinking package</p>
+          <p class="">One year membership</p>
+          <p class="">5 classes per week</p>
+          <p class="">Free personal training</p>
+          <button class="btn btn-info text-white border-0 rounded py-2 px-3">BUY NOW</button>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-md-3" >
+      <div style="background-image: url(image/pricing-bg-03.jpg); background-size: cover;">
+      <div class="card py-3" style="background-color: rgba(0,0,0,0.8);">
+        <div class="card-body text-white">
+          <h5 class="card-title  fw-bold">STANDARD</h5>
+          <h2 class="fw-bold  my-4" >$99/<span class="fs-5">monthly</span></h2>
+          <p class="">Unlimited access to the GYM</p>
+          <p class="">FREE drinking package</p>
+          <p class="">two year membership</p>
+          <p class="">7 classes per week</p>
+          <p class="">Free personal training</p>
+          <button class="btn btn-info  text-white border-0 rounded py-2 px-3">BUY NOW</button>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container py-5">
+    <div id="carouselExample2" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button type="button" class="active rounded-circle pt-1 bg-info" data-bs-target="#carouselExample2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" class="active rounded-circle pt-1 bg-info" data-bs-target="#carouselExample2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" class="active rounded-circle pt-1 px-0 bg-info" data-bs-target="#carouselExample2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+        <div class="row py-5">
+          <div class="col-md-8">
+            <h2 class="fw-bold py-5 mx-5 w-75">"We were treated like royalty.Needless to say you we are extremely satisfied with the results.I learm more about    it"</h2>
+            <p class="text-info pt-3 mx-5">---Kimberley Taylor,<span class="fw-bold text-dark">Manager(Budget Power)</span></p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="image/t-01.jpg" class="w-50 pt-3 rounded-pill">
+          </div>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <div class="row py-5">
+          <div class="col-md-8">
+            <h2 class="fw-bold py-5 mx-5 w-75">"It's just amazing. I just can't get enough of GYM .I want to get a T-Shirt with GYM on it so I can show it off to everyone"</h2>
+            <p class="text-info pt-3 mx-5">---Alva Hazley,<span class="fw-bold text-dark">Agent(Museum)</span></p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="image/t-02.jpg" class="w-50 pt-3 rounded-pill">
+          </div>
+        </div>
+        </div>
+        <div class="carousel-item">
+<div class="row py-5">
+  <div class="col-md-8">
+    <h2 class="fw-bold py-5 mx-5 w-75">"I will let my mum know about this ,she could really make use of GYM! I will reccomend you to my colleagues."</h2>
+            <p class="text-info pt-3 mx-5">---Beverly Cowley,<span class="fw-bold text-dark">Economist(Weatherill's)</span></p>
+  </div>
+  <div class="col-md-4 text-center">
+    <img src="image/t-03.jpg" class="w-50 pt-3 rounded-pill">
+  </div>
+</div>
+</div>
+  </div>
+  </div>
+  </div>
+  <div class="container mb-5" id="contact">
+    <div class="row justify-content-between">
+      <div class="col-md-4"> 
+        <div class="bg-light p-5 border rounded-3">
+        <h4 class="fw-bold fs-3">Latest News</h4>  
+        <div class="row border-bottom pb-5 border-2 border-dark pt-3">
+        <div class="col-md-3 mt-2 text-center bg-white text-info">
+         <h4 class="pt-2">22</h4>
+         <p class="text-dark">OCT</p>
+        </div>
+        <div class="col-md-9">
+          <p class="fs-6">7 precious tips to help you get a better at GYM </p>
+          <a >
+            <i class="bi bi-person-fill"><span class="ms-1">By Admin</span></i>
+            <i class="bi bi-chat-fill fs- ms-3"><span class="ms-1">28</span></i>
+          </a>
+        </div>
+        </div>
+        <div class="row border-bottom pb-5 border-2 border-dark pt-3">
+          <div class="col-md-3 mt-2 text-center bg-white text-info">
+           <h4 class="pt-2">17</h4>
+           <p class="text-dark">SEP</p>
+          </div>
+          <div class="col-md-9">
+            <p class="fs-6 ">You 'll' never thought  that knowing GYM is so beneficial  </p>
+            <a >
+              <i class="bi bi-person-fill"><span class="ms-1">By Admin</span></i>
+              <i class="bi bi-chat-fill fs- ms-3"><span class="ms-1">48</span></i>
+            </a>
+          </div>
+          </div>
+          <div class="row border-bottom pb-5 border-2 border-dark pt-3">
+            <div class="col-md-3 mt-2 text-center bg-white text-info">
+             <h4 class="pt-2">02</h4>
+             <p class="text-dark">AUG</p>
+            </div>
+            <div class="col-md-9">
+              <p class="fs-6">7 precious tips to help you get a better at GYM </p>
+              <a >
+                <i class="bi bi-person-fill"><span class="ms-1">By Admin</span></i>
+                <i class="bi bi-chat-fill fs- ms-3"><span class="ms-1">22</span></i>
+              </a>
+            </div>
+            </div>
+                 
+        </div>
+      </div>
+      <div class="col-md-7"> 
+        <div class="bg-light p-5 border rounded-4">
+          <h3 class="fw-bold fs-3">Quick Links</h3>
+<div class="row">
+  <div class="col-md my-2">
+    <label class="fw-bold fs-5" >Your Name <span class="text-info">*</span></label> <br>
+<input type="text" class="rounded-1 form-control py-2 mt-2" placeholder= "Your Name Here">
+  </div>
+  <div class="col-md my-2">
+    <label class="fw-bold fs-5" >Your Email <span class="text-info">*</span></label> <br>
+<input type="email" class="rounded-1 form-control py-2 mt-2" placeholder= " Your Email Here">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md my-2">
+    <label class="fw-bold fs-5" >Your Subject <span class="text-info">*</span></label> <br>
+<input type="text" class="rounded-1 form-control py-2 mt-2" placeholder= "Your Subject Here">
+  </div>
+  <div class="col-md my-2">
+    <label class="fw-bold fs-5" >Contact Number <span class="text-info">*</span></label> <br>
+<input type="tel" class="rounded-1 form-control py-2 mt-2" placeholder= " Your telephone no.">
+  </div>
+</div>
+<div class="row ">
+  <div class="col-md my-2">
+<label class="fw-bold fs-5 m-2">Messages <span class="text-info">*</span></label> <br>
+<textarea name="Text" class="rounded-2  border-2 form-control" id=""  rows="4"></textarea>
+<input type="text" class="mt-2 py-3 form-control rounded-2 " placeholder="Type The Below Words">
+<button class="btn btn-outline-info mt-4 py-2 px-4  text-dark ">Send Messages</button>
+</div>
+</div>
+
+  </div>
+  </div>
+  </div>
+  </div>
+<div class="bg-info text-center py-5">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h3 class="fw-bold text-white">Subscribe to our Newsletter!</h3>
+      <p class="fs-5 fw-bold text-white pt-3">Sign up for our newsletter and follow us on social media.</p>
+    </div>
+    <div class="col-md-4  px-5 py-2"><div class="input-group py-3">
+      <input type="text" class="form-control" placeholder="Subscribe with  us" aria-label="Recipient's username" aria-describedby="icons">
+      <i class="bi bi-telegram fs-2 bg-white p-2 " id="icons"></i>
+    
+    </div></div>
+  </div>
+</div>
+</div>
+<footer class="bg-white py-5">
+<div class="container ">
+  <div class="row">
+    <div class="col-md-3">
+      <h5 class="fw-bold mx-5">Address</h5>
+      <p class="mx-5  w-75 fs-6">#30 Model Town,Rani Ka Bagh,Amritsar</p>
+    </div>
+    <div class="col-md-3">
+      <h5 class="fw-bold mx-5">Phone</h5>
+      <p class="mx-5">(+91) 123 456 789 <br>
+        (+91) 321 456 789</p>
+    </div>
+    <div class="col-md-3">
+      <h5 class="fw-bold mx-5">Email</h5>
+    <p class="mx-5">email@youradress.com <br>
+      addyour@emailhere.com</p>
+    </div>
+    <div class="col-md-3">
+      <h5 class="fw-bold mx-5 mb-4">Social</h5>
+      <a>
+        <i class="bi bi-facebook mx-2 border p-2 rounded fs-5"></i>
+        <i class="bi bi-twitter mx-2 border p-2 rounded fs-5"></i>
+        <i class="bi bi-instagram mx-2 border p-2 rounded fs-5"></i>
+        <i class="bi bi-linkedin mx-2 border p-2 rounded fs-5"></i>
+      </a>
+    </div>
+  </div>
+</div>
+</footer>
+<div class="bg-light border  py-3 text-center fs-5 ">
+<p>@2024 Limitless GYM is Designed by Jatin Bhardwaj </p>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>      
+</body>
+</html>
